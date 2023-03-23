@@ -29,7 +29,7 @@ public class CustomerController {
     public int create(@Valid @RequestBody Customer customer){
         return repository.create(customer);
     }
-    @PostMapping("/{id}")
+    @PutMapping("/{id}")
     public void update(@Valid @RequestBody Customer customer, @PathVariable int id){
         repository.update(customer, id);
     }
