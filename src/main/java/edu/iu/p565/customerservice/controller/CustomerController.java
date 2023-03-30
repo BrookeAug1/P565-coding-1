@@ -21,7 +21,6 @@ public class CustomerController {
 
     @GetMapping
     public List<Customer> findAll(){
-
         return repository.findAll();
     }
 
